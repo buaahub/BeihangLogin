@@ -7,5 +7,5 @@ if [[ "$?" != "0" ]]; then
         exit 1
 fi
 
-./login-v2.sh login
+./login-v2.sh login $1
 
