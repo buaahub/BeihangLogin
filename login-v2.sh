@@ -4,8 +4,12 @@
 #####################
 # Login Information #
 #####################
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
-source $SCRIPT_DIR/account
+ACCOUNT_FILE="$2"
+if [ -z "$ACCOUNT_FILE" ]; then
+	SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+	ACCOUNT_FILE="$SCRIPT_DIR"/account
+fi
+source "$ACCOUNT_FILE"
 
 #################
 # Customization #
