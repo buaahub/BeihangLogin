@@ -36,4 +36,4 @@ https://github.com/RogerYong/bit_srun
 ### Rust 版
 来自Rynco
 
-https://github.com/01010101lzy/buaa-portal-login
+https://github.com/buaahub/beihang-login
