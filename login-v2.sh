@@ -270,7 +270,7 @@ RESULT=`curl -k -s -c $COOKIEFILE \
 
 #echo $RESULT
 AC_ID=${RESULT#*ac_id=}
-AC_ID=1
+AC_ID=${AC_ID%%&*}
 echo "AC_ID: "$AC_ID
 
 # Get challenge number
